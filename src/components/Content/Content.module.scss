@@ -1,0 +1,14 @@
+.contentWrapper {
+   
+}
+
+.content { 
+    &__ratings {
+        transition: .3s all;
+        font-size: 22px;
+        &:hover {
+            border-bottom: 1px solid #000;
+            transition: .3s all;
+        }
+    }
+}

@@ -1,24 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header/Header';
+import Content from './components/Content/Content';
+import {Switch, Route} from 'react-router-dom'
+import Popular from './components/Movies/Popular';
+import About from './components/About/About';
+import Soon from './components/Movies/Soon'
+import Ratings from './components/Movies/Ratings'
+import Categories from './components/Categories/Categories';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <Header/>
+    <div className='app'>
+      <div className='wrapper'>
+        <Switch>
+          <Route path='/' component={Content} exact/>
+          <Route path='/popular' component={Popular}/>
+          <Route path='/ratings' component={Ratings}/>
+          <Route path='/soon' render={(props) => (
+            <Soon {...props} />)}/>
+          <Route path='/about/:id' component={About} />
+          <Route path='/categories' component={Categories} />
+        </Switch>
+      </div>
     </div>
+    </>
   );
 }
 

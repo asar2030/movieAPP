@@ -1,0 +1,43 @@
+.about {
+    display: flex;
+    justify-content: space-between;
+    &__poster {
+        width: 45%;
+        img {
+            border-radius: 5px;
+        }
+    }
+    &__info {
+        width: 55%;
+        text-align: center;
+        &__title {
+            line-height: 1;
+        }
+        &__overview {
+            text-align: justify;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        &__additional {
+            color: #999999;
+            &__rate {
+                font-weight: 560;
+            }
+        }
+    }
+}
+
+.recommendationsWrapper {
+    margin-top: 20px;
+}
+.recommendations {
+    border-radius: 5px;
+    img {
+        width: 250px;
+        border-radius: 5px;
+    }
+    &__title {
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+}

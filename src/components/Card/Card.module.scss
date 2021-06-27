@@ -1,0 +1,28 @@
+.cardWrapper {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 5px;
+}
+
+.card {
+    width: 350px;
+    text-align: center;
+    transition: .3s all;
+    &__poster {
+        img {
+            width: 290px;
+            height: 163px;
+            border-radius: 5px;
+            object-fit:cover;
+        }
+    }
+    &__title {
+        width: 250px;
+    }
+}
+
+.swiper-slide {
+    height: 300px;
+}

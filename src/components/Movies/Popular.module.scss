@@ -1,0 +1,27 @@
+.cardWrapper {
+    margin-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    text-align: center;
+    width: 380px;
+    margin-bottom: 15px;
+    transition: .3s all;
+    &:hover {
+        transform: scale(1.1);
+        transition: .3s all;
+    }
+    &__poster {
+        img {
+            width: 350px;
+            height: 250px;
+            border-radius: 5px;
+            object-fit:initial;
+        }
+    }
+    &__title {
+        width: 250px;
+    }
+}

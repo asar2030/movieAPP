@@ -1,0 +1,7 @@
+.swiper-slide {
+    min-height: 240px;
+}
+
+.swiper-pagination-bullets {
+    display: none;
+}
